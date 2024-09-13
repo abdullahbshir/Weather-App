@@ -1,0 +1,372 @@
+.video-background-container {
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.video-background-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+/* Heading */
+.heading {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    color: white;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.heading img {
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+}
+
+/* Hide Menu */
+.hide {
+    height: 92vh;
+    width: 80%;
+    max-width: 300px;
+    padding: 2%;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.1);
+    color: white;
+    overflow-y: auto;
+}
+
+/* Image Container */
+.pic {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.pic img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.setting {
+    position: absolute;
+    top: 3%;
+    margin-left: -20%;
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    box-sizing: border-box;
+    z-index: 10;
+    overflow: auto;
+}
+
+.setting h6, .setting h4, .setting h7, .setting h5, .line2 h6 {
+    color: black;
+}
+
+.line, .line2 {
+    height: 2px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.setting img {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 15px;
+}
+
+.setting h4 {
+    margin-left: 20%;
+    margin-top: -22%;
+}
+
+/* Text and Form Elements */
+.content {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Text Container */
+.text {
+    text-align: center;
+    width: 100%;
+    margin-left: -20%;
+    max-width: 500px;
+}
+
+/* Container for Search Box and Dropdown */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-left: 8%;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Search Box */
+.text input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px 0 0 5px;
+    color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    background-size: 20px 20px;
+    background-color: transparent;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    color: white;
+    background-color: rgba(128, 128, 128, 0.2);
+    max-width: 100px;
+    margin-right: -33px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropbtn:hover {
+    background-color: #0056b3;
+}
+
+/* Dropdown Content */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: gray;
+    color: black;
+}
+
+.text {
+    justify-content: center;
+}
+
+.text select,
+.text button {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin-left: 8%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.text button {
+    background-color: rgba(128, 128, 128, 0.3);
+    cursor: pointer;
+    margin-left: 35%;
+
+}
+
+.text button:hover {
+    background-color: gray;
+}
+
+/* Forecast */
+.forcast {
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    border-radius: 40px;
+    color: black;
+    background-color: rgba(128, 128, 128, 0.3);
+    padding: 15px;
+    text-align: center;
+}
+
+.forcast h5, .forcast h6 {
+    margin: 10px 0;
+}
+
+.forcast img {
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+}
+
+
+.forcast h3 {
+    margin: 10px 0;
+
+}
+
+.forcast p {
+    font-size: 0.9rem;
+}
+
+.wind {
+    background-color: rgba(128, 128, 128, 0.3);
+    color: black;
+    /* border: 1px solid #ccc;  */
+    padding: 10px; 
+    border-radius: 8px; 
+    width: 200px; 
+    margin: 20px auto; 
+    text-align: center; 
+    font-family: Arial, sans-serif;
+    margin-left: 70%;
+    margin-top: -15%;
+
+}
+
+.wind h4 {
+    margin: 5px 0;
+    color: black;
+}
+
+.wind h4:first-child {
+    font-size: 18px; 
+}
+
+.wind h4:last-child {
+    font-size: 16px; 
+    color: black;
+    margin-top: -5%;
+}
+
+.wind p {
+    font-size: 16px; 
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .heading {
+        height: auto;
+        padding: 0 2%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .heading img {
+        height: 40px;
+        width: 80px;
+        position: static;
+        margin-top: 10px;
+    }
+
+    .hide {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 20%;
+        top: 0;
+        right: 0;
+        height: auto;
+    }
+
+    .search-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .text input {
+        max-width: 100%;
+        border-radius: 5px;
+    }
+
+    .dropbtn {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .dropdown-content {
+        min-width: 100%;
+    }
+
+    .forcast {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        padding: 0 1%;
+    }
+
+    .heading img {
+        height: 30px;
+        width: 60px;
+    }
+
+    .text input {
+        font-size: 0.9rem;
+    }
+
+    .text select,
+    .text button {
+        font-size: 0.9rem;
+    }
+
+    .forcast {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+}
+
+.date{
+    width: 100%;
+    margin-left: 120%;
+    margin-top: -30%;
+}
